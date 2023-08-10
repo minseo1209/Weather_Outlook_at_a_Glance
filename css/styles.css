@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Nexon';
+  src: url('../font/NEXON\ Lv1\ Gothic\ Low\ OTF\ Light.otf') format('truetype');
+}
+
+.sky,
+.gray,
+.rain,
+.snow,
+.Thunder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10000;
+  opacity: 0;
+}
+
+.circle_one {
+  opacity: 0.4;
+  position: absolute;
+  background: rgb(255, 208, 0);
+  border-radius: 100%;
+  margin-top: -54%;
+  margin-left: -54%;
+  width: 300px;
+  height: 300px;
+  z-index: -5;
+}
+
+.circle_two {
+  opacity: 0.4;
+  position: absolute;
+  background: rgb(53, 207, 87);
+  border-radius: 100%;
+  margin-top: 126%;
+  margin-left: 54%;
+  width: 300px;
+  height: 300px;
+  z-index: -5;
+}
+
+#back {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+h1 {
+  margin: 0;
+}
+* {
+  font-family: 'Nexon';
+}
+
+.weather-container {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 100;
+  width: 300px;
+
+  position: relative;
+}
+
+.description {
+  font-size: 18px;
+  color: #666666;
+}
+button,
+#btn {
+  border: 1px solid rgb(193, 193, 193);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btn {
+  margin: 10px 0 10px 0;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+#data {
+  display: none;
+}

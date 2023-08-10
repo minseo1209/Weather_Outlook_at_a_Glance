@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>날씨</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="back">
+    <!--배경 영상 리스트-->
+    <div class="gray">
+      <video class="content" autoplay muted loop>
+        <source src="./assets/clouds_-_27954 (1080p).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="sky">
+      <video class="content" autoplay muted loop>
+        <source src="./assets/clouds_-_17723 (1080p).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="rain">
+      <video class="content" autoplay muted loop>
+        <source src="./assets/rain_-_19977 (540p).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="Thunder">
+      <video class="content" autoplay muted loop>
+        <source
+          src="./assets/thunderstorm_-_125192 (1080p).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <div class="snow">
+      <video class="content" autoplay muted loop>
+        <source
+          src="./assets/thunderstorm_-_125192 (1080p).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <div class="weather-container">
+      <div class="circle_one"></div>
+      <div class="circle_two"></div>
+      <h1>날씨 검색</h1>
+      <input
+        type="button"
+        id="btn"
+        onclick="btn_click()"
+        value="영문 리스트 보여주기"
+      />
+      <ul id="data">
+        <li>서울 : Seoul</li>
+        <li>인천 : Incheon</li>
+        <li>대구 : Daegu</li>
+        <li>대전 : Daejeon</li>
+        <li>경기도 : Gyeonggi-do</li>
+        <li>부산 : Busan</li>
+        <li>충청남도 : Chungcheongnam-do</li>
+        <li>전라남도 : Jeollanam-do</li>
+        <li>경상남도 : Gyeongsangnam-do</li>
+        <li>제주도 : Jeju-do</li>
+        <li>광주 : Gwangju</li>
+        <li>울산 : Ulsan</li>
+        <li>강원도 : Gangwon-do</li>
+        <li>충청북도 : Chungcheongbuk-do</li>
+        <li>전라북도 : Jeollabuk-do</li>
+        <li>경상북도 : Gyeongsangbuk-do</li>
+      </ul>
+      <div class="search-container">
+        <form id="searchForm">
+          <span>지역명 : </span>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="영어 지역명을 입력하세요"
+          />
+          <button type="submit">검색</button>
+        </form>
+      </div>
+      <div class="location">
+        <p>위치: <span id="location"></span></p>
+      </div>
+      <div class="temperature">
+        <p>온도: <span id="temperature"></span>°C</p>
+      </div>
+      <div class="description">
+        <p>날씨: <span id="description"></span></p>
+      </div>
+    </div>
+  </div>
+    <div id="weather-container"></div>
+  </body>
+</html>
