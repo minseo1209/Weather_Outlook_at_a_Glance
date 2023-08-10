@@ -28,7 +28,7 @@ const rainElemnts = document.getElementsByClassName('rain');
 
 const ThunderElemnts = document.getElementsByClassName('Thunder');
 const snowElemnts = document.getElementsByClassName('snow');
-const skyElements = document.getElementsByClassName('sky'); // 모든 sky 클래스 요소를 선택
+const skyElements = document.getElementsByClassName('sky');
 
 // 배경 설정 함수
 function setWeatherBackground(weather) {
@@ -71,10 +71,10 @@ function setWeatherBackground(weather) {
       grayElements[i].style.opacity = '0';
       skyElements[i].style.opacity = '0';
       snowElemnts[i].style.opacity = '1';
-      ThunderElemnts[i].style.opacity = '0'; // 눈 배경
+      ThunderElemnts[i].style.opacity = '0';
     }
   } else {
-    back.style.backgroundColor = 'lightgray'; // 기타 배경
+    back.style.backgroundColor = 'lightgray';
   }
 }
 
@@ -98,11 +98,11 @@ searchForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const city = searchInput.value;
   updateWeather(city);
-  searchInput.value = ''; // 입력 필드 초기화
+  searchInput.value = '';
 });
 
 // 초기화
-searchInput.value = ''; // 입력 필드 초기화
+searchInput.value = '';
 
 // 버튼 이벤트
 function btn_click() {
